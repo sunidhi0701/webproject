@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000; /* Black background */
+      color: #ffffff; /* White text color for better contrast */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background-color: #333333; /* Dark grey container for contrast */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #00e676; /* Light green text for header */
+    }
+    #task-input {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background-color: #444; /* Darker background for input */
+      color: #ffffff; /* White text in input field */
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #00e676; /* Green button color */
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #00c853; /* Darker green on hover */
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    li {
+      background-color: #444444; /* Dark background for list items */
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+      color: #ffffff; /* White text for list items */
+    }
+    li:hover {
+      background-color: #555555; /* Slightly lighter on hover */
+    }
+    .delete-btn {
+      background-color: #ff1744; /* Red delete button */
+      border: none;
+      padding: 5px 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .delete-btn:hover {
+      background-color: #d50000; /* Darker red on hover */
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="container">
+    <h1>Task Management App</h1>
+    
+    <input type="text" id="task-input" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
+    
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
